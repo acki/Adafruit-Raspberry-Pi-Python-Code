@@ -439,7 +439,7 @@ class Adafruit_CharLCDPlate(Adafruit_I2C):
 
 if __name__ == '__main__':
 
-    lcd = Adafruit_CharLCDPlate()
+    lcd = Adafruit_CharLCDPlate(busnum = 1)
     lcd.begin(16, 2)
     lcd.clear()
     lcd.message("Adafruit RGB LCD\nPlate w/Keypad!")
